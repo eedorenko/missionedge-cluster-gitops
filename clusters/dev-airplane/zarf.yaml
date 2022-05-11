@@ -1,0 +1,17 @@
+kind: ZarfPackageConfig
+metadata:
+  name: dev-airplane
+
+components:
+
+- name: flux-iron-bank
+  required: true
+  import:
+    path: ../../applications/coral-system/ManifestDeployments/flux-iron-bank
+
+
+- name: big-bang
+  required: true
+  import:
+    path: ../../applications/coral-system/ManifestDeployments/big-bang
+
