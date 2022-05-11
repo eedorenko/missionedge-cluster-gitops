@@ -1,0 +1,12 @@
+kind: ZarfPackageConfig
+metadata:
+  name: missionedge-appdev-sample
+components:
+  - name: missionedge-appdev-sample
+    required: true
+    manifests:
+      - name: rancher-hello-world
+        kustomizations:
+          - https://github.com/eedorenko/missionedge-appdev-sample-manifests//rancher-hello-world/?ref=prod
+    images:
+      - ghcr.io/eedorenko/missionedge-appdev-sample-src:zarf

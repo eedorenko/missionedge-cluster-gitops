@@ -15,3 +15,9 @@ components:
   import:
     path: ../../applications/coral-system/ManifestDeployments/big-bang
 
+
+- name: missionedge-appdev-sample
+  required: true
+  import:
+    path: ../../applications/coral-applications/ApplicationRegistrations/missionedge-appdev-sample/production
+

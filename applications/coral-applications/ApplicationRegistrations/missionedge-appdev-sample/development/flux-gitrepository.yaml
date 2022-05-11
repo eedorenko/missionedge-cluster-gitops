@@ -1,0 +1,16 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: missionedge-appdev-sample
+  namespace: flux-system
+  labels:
+    app: missionedge-appdev-sample
+    workspace: coral-applications
+    target: development
+    environment: dev
+    type: airplane
+spec:
+  interval: 1m0s
+  ref:
+    branch: dev
+  url: https://github.com/eedorenko/missionedge-appdev-sample-manifests

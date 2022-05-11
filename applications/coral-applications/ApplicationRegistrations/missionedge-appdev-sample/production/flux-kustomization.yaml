@@ -1,0 +1,19 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: missionedge-appdev-sample
+  namespace: flux-system
+  labels:
+    app: missionedge-appdev-sample
+    workspace: coral-applications
+    target: production
+    environment: prod
+    type: airplane
+spec:
+  interval: 10m0s
+  sourceRef:
+    kind: GitRepository
+    name: missionedge-appdev-sample
+  path: rancher-hello-world
+  prune: true
+  validation: client  
