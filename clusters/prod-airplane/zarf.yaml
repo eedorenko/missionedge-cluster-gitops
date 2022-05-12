@@ -4,16 +4,16 @@ metadata:
 
 components:
 
-- name: flux-iron-bank
-  required: true
-  import:
-    path: ../../applications/coral-system/ManifestDeployments/flux-iron-bank
-
-
 - name: big-bang
   required: true
   import:
     path: ../../applications/coral-system/ManifestDeployments/big-bang
+
+
+- name: flux-iron-bank
+  required: true
+  import:
+    path: ../../applications/coral-system/ManifestDeployments/flux-iron-bank
 
 
 - name: missionedge-appdev-sample
